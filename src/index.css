@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+/* Prism Themes */
+pre[class*="language-"] {
+  background: #f9fafb !important;
+  color: #111827 !important;
+  text-shadow: none !important;
+}
+
+.dark pre[class*="language-"] {
+  background: #161b22 !important;
+  color: #ffffff !important;
+}
+
+/* Prism Light Mode Token Overrides */
+pre[class*="language-"]:not(.dark *) .token.comment,
+pre[class*="language-"]:not(.dark *) .token.prolog,
+pre[class*="language-"]:not(.dark *) .token.doctype,
+pre[class*="language-"]:not(.dark *) .token.cdata {
+  color: #6b7280;
+}
+
+pre[class*="language-"]:not(.dark *) .token.punctuation {
+  color: #374151;
+}
+
+pre[class*="language-"]:not(.dark *) .token.property,
+pre[class*="language-"]:not(.dark *) .token.tag,
+pre[class*="language-"]:not(.dark *) .token.boolean,
+pre[class*="language-"]:not(.dark *) .token.number,
+pre[class*="language-"]:not(.dark *) .token.constant,
+pre[class*="language-"]:not(.dark *) .token.symbol,
+pre[class*="language-"]:not(.dark *) .token.deleted {
+  color: #d97706;
+}
+
+pre[class*="language-"]:not(.dark *) .token.selector,
+pre[class*="language-"]:not(.dark *) .token.attr-name,
+pre[class*="language-"]:not(.dark *) .token.string,
+pre[class*="language-"]:not(.dark *) .token.char,
+pre[class*="language-"]:not(.dark *) .token.builtin,
+pre[class*="language-"]:not(.dark *) .token.inserted {
+  color: #059669;
+}
+
+pre[class*="language-"]:not(.dark *) .token.operator,
+pre[class*="language-"]:not(.dark *) .token.entity,
+pre[class*="language-"]:not(.dark *) .token.url,
+pre[class*="language-"]:not(.dark *) .language-css .token.string,
+pre[class*="language-"]:not(.dark *) .style .token.string {
+  color: #2563eb;
+}
+
+pre[class*="language-"]:not(.dark *) .token.atrule,
+pre[class*="language-"]:not(.dark *) .token.attr-value,
+pre[class*="language-"]:not(.dark *) .token.keyword {
+  color: #7c3aed;
+}
+
+pre[class*="language-"]:not(.dark *) .token.function,
+pre[class*="language-"]:not(.dark *) .token.class-name {
+  color: #db2777;
+}
+
+pre[class*="language-"]:not(.dark *) .token.regex,
+pre[class*="language-"]:not(.dark *) .token.important,
+pre[class*="language-"]:not(.dark *) .token.variable {
+  color: #ea580c;
+}
+
+@layer base {
+  body {
+    @apply bg-[#0d1117] text-gray-300 font-sans;
+  }
+  
+  textarea::placeholder {
+    @apply text-gray-500 dark:text-gray-600;
+  }
+}
+
+.prism-code {
+  @apply font-mono text-sm leading-relaxed;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full hover:bg-gray-600 transition-colors;
+}
