@@ -4,9 +4,22 @@ A fast, lightweight, and beautifully designed collection of **developer tools** 
 
 ---
 
+## 🚀 Live Demo
+
+👉 **Try it here:**
+https://devtool-kit.vercel.app/
+
+---
+
+## 📸 Preview
+
+![App Screenshot](./Screenshot.png)
+
+---
+
 ## 🚀 Overview
 
-**Code Helper Toolkit** is built for developers, students, and freelancers who need quick access to essential utilities like formatters, generators, converters, debugging tools, and now a **live code editor**.
+**Code Helper Toolkit** is built for developers, students, and freelancers who need quick access to essential utilities like formatters, generators, converters, debugging tools, and a **live code editor**.
 
 No installs. No setup. Just code and run ⚡
 
@@ -14,14 +27,14 @@ No installs. No setup. Just code and run ⚡
 
 ## ✨ Features
 
-### 🧑‍💻 Live Code Compiler (NEW 🔥)
+### 🧑‍💻 Live Code Compiler
 
 * Write and run **HTML, CSS, and JavaScript** in real-time
 * Instant preview (like CodePen)
-* Split-screen editor + output view
-* Auto-refresh on code changes
-* Reset / Clear editor
-* Copy code easily
+* Split-screen editor + output
+* Auto-refresh on changes
+* Reset / clear editor
+* Copy code
 
 ---
 
@@ -29,14 +42,14 @@ No installs. No setup. Just code and run ⚡
 
 * JSON Formatter & Validator
 * HTML, CSS, JavaScript Formatter
-* Code Minifiers (HTML, CSS, JS)
+* Code Minifiers
 
 ---
 
 ### 🔍 Debugging & Testing
 
-* Regex Tester (live matching + flags)
-* Diff Checker (compare text/code)
+* Regex Tester
+* Diff Checker
 * API Tester (mini Postman)
 
 ---
@@ -50,23 +63,19 @@ No installs. No setup. Just code and run ⚡
 
 ---
 
-### 🎨 Frontend Developer Tools
+### 🎨 Frontend Tools
 
 * Color Picker
 * HEX ↔ RGB ↔ HSL Converter
-* CSS Generators:
-
-  * Box Shadow
-  * Border Radius
-  * Glassmorphism
+* CSS Generators (Shadow, Radius, Glassmorphism)
 * Gradient Generator
 
 ---
 
 ### 🧠 Productivity Tools
 
-* Code Snippets Manager (save locally)
-* Markdown Previewer (live rendering)
+* Code Snippets Manager
+* Markdown Previewer
 * JSON Viewer
 
 ---
@@ -74,8 +83,8 @@ No installs. No setup. Just code and run ⚡
 ### 🧮 Utilities
 
 * UUID Generator
-* Password Generator (with strength indicator)
-* Timestamp Converter (Unix ↔ Date)
+* Password Generator
+* Timestamp Converter
 
 ---
 
@@ -83,71 +92,91 @@ No installs. No setup. Just code and run ⚡
 
 * 🌗 Dark Mode (default) + Light Mode
 * 🔤 Monospace font (JetBrains Mono)
-* 🧼 Clean, distraction-free editor UI
-* ⚡ Instant results (client-side tools)
+* ⚡ Instant results
 * 📋 Copy-to-clipboard everywhere
+* 🧼 Clean & distraction-free UI
 
 ---
 
 ## 📱 Responsive Design
 
 * Fully responsive (mobile + desktop)
-* Split-screen layout for compiler
-* Optimized for speed and usability
+* Split-screen editor layout
+* Optimized for speed
 
 ---
 
 ## ⚙️ Tech Stack
 
-**Frontend:**
-
 * React (Vite)
 * Tailwind CSS
 * Framer Motion
-
-**Libraries:**
-
-* Prism.js (syntax highlighting)
-* Prettier (formatting)
-* CryptoJS (hashing)
-* Axios (API requests)
+* Prism.js
+* Prettier
+* CryptoJS
+* Axios
 
 ---
 
 ## 💾 Local Storage
 
-Used for:
-
-* Saved code snippets
+* Saved snippets
 * Theme preference
-* Last editor session (optional)
+* Editor state (optional)
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ How to Run Locally
+
+Follow these steps to run the project on your machine:
+
+### 1. Clone the Repository
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/code-helper-toolkit.git
+git clone https://github.com/mohakamran/devtool_kit.git
+```
 
-# Navigate to project
-cd code-helper-toolkit
+### 2. Navigate to Project Folder
 
-# Install dependencies
+```bash
+cd devtool_kit
+```
+
+### 3. Install Dependencies
+
+```bash
 npm install
+```
 
-# Start dev server
+### 4. Start Development Server
+
+```bash
 npm run dev
+```
+
+### 5. Open in Browser
+
+Visit:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🏗️ Build for Production
+
+```bash
+npm run build
+npm run preview
 ```
 
 ---
 
 ## 🌍 Deployment
 
-Deploy easily on:
-
-* Vercel
-* Netlify
+Deployed on **Vercel**
+You can deploy your own version easily by connecting your GitHub repo.
 
 ---
 
